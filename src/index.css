@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900 bg-white;
+  }
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply font-black tracking-tighter uppercase text-gray-900;
+}
+
+.prose p {
+  @apply leading-relaxed text-gray-700;
+}
+
+.prose strong {
+  @apply font-bold text-gray-900;
+}
